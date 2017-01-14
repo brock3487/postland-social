@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FB5FECDD385CC0C0E29FE4F /* Pods_PostLand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72377552FBD2927D89F1EC52 /* Pods_PostLand.framework */; };
 		84F5EE921E2A39BD00765BA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5EE911E2A39BD00765BA2 /* AppDelegate.swift */; };
-		84F5EE941E2A39BD00765BA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5EE931E2A39BD00765BA2 /* ViewController.swift */; };
+		84F5EE941E2A39BD00765BA2 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5EE931E2A39BD00765BA2 /* SignInVC.swift */; };
 		84F5EE971E2A39BD00765BA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F5EE951E2A39BD00765BA2 /* Main.storyboard */; };
 		84F5EE991E2A39BD00765BA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F5EE981E2A39BD00765BA2 /* Assets.xcassets */; };
 		84F5EE9C1E2A39BD00765BA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F5EE9A1E2A39BD00765BA2 /* LaunchScreen.storyboard */; };
+		84F5EEA41E2A39D400765BA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84F5EEA31E2A39D400765BA2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F1F2E824216D80CB52D9BDE /* Pods-PostLand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostLand.release.xcconfig"; path = "Pods/Target Support Files/Pods-PostLand/Pods-PostLand.release.xcconfig"; sourceTree = "<group>"; };
+		72377552FBD2927D89F1EC52 /* Pods_PostLand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostLand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F5EE8E1E2A39BD00765BA2 /* PostLand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostLand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F5EE911E2A39BD00765BA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84F5EE931E2A39BD00765BA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84F5EE931E2A39BD00765BA2 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		84F5EE961E2A39BD00765BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84F5EE981E2A39BD00765BA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F5EE9B1E2A39BD00765BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F5EE9D1E2A39BD00765BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F5EEA31E2A39D400765BA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C56CC111ADE927BE13BB9F2E /* Pods-PostLand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostLand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PostLand/Pods-PostLand.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB5FECDD385CC0C0E29FE4F /* Pods_PostLand.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E78C5470367447ECEDC37E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72377552FBD2927D89F1EC52 /* Pods_PostLand.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BDB040E6215C676266CDDBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C56CC111ADE927BE13BB9F2E /* Pods-PostLand.debug.xcconfig */,
+				5F1F2E824216D80CB52D9BDE /* Pods-PostLand.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84D756BC1E2A3C1100D15091 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84F5EEA31E2A39D400765BA2 /* GoogleService-Info.plist */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84D756BD1E2A3C1800D15091 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84D756BE1E2A3C1E00D15091 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84F5EE931E2A39BD00765BA2 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		84F5EE851E2A39BC00765BA2 = {
 			isa = PBXGroup;
 			children = (
 				84F5EE901E2A39BD00765BA2 /* PostLand */,
 				84F5EE8F1E2A39BD00765BA2 /* Products */,
+				5BDB040E6215C676266CDDBB /* Pods */,
+				3E78C5470367447ECEDC37E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +103,10 @@
 		84F5EE901E2A39BD00765BA2 /* PostLand */ = {
 			isa = PBXGroup;
 			children = (
+				84D756BC1E2A3C1100D15091 /* Model */,
+				84D756BD1E2A3C1800D15091 /* View */,
+				84D756BE1E2A3C1E00D15091 /* Controller */,
 				84F5EE911E2A39BD00765BA2 /* AppDelegate.swift */,
-				84F5EE931E2A39BD00765BA2 /* ViewController.swift */,
 				84F5EE951E2A39BD00765BA2 /* Main.storyboard */,
 				84F5EE981E2A39BD00765BA2 /* Assets.xcassets */,
 				84F5EE9A1E2A39BD00765BA2 /* LaunchScreen.storyboard */,
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F5EEA01E2A39BD00765BA2 /* Build configuration list for PBXNativeTarget "PostLand" */;
 			buildPhases = (
+				2F1BAB8490AFCF9E3D1755EC /* [CP] Check Pods Manifest.lock */,
 				84F5EE8A1E2A39BD00765BA2 /* Sources */,
 				84F5EE8B1E2A39BD00765BA2 /* Frameworks */,
 				84F5EE8C1E2A39BD00765BA2 /* Resources */,
+				629A21AF00F17C4D8C23621D /* [CP] Embed Pods Frameworks */,
+				C321999C83348EB541779CCB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F5EE9C1E2A39BD00765BA2 /* LaunchScreen.storyboard in Resources */,
+				84F5EEA41E2A39D400765BA2 /* GoogleService-Info.plist in Resources */,
 				84F5EE991E2A39BD00765BA2 /* Assets.xcassets in Resources */,
 				84F5EE971E2A39BD00765BA2 /* Main.storyboard in Resources */,
 			);
@@ -132,12 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F1BAB8490AFCF9E3D1755EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		629A21AF00F17C4D8C23621D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PostLand/Pods-PostLand-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C321999C83348EB541779CCB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PostLand/Pods-PostLand-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84F5EE8A1E2A39BD00765BA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F5EE941E2A39BD00765BA2 /* ViewController.swift in Sources */,
+				84F5EE941E2A39BD00765BA2 /* SignInVC.swift in Sources */,
 				84F5EE921E2A39BD00765BA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +362,7 @@
 		};
 		84F5EEA11E2A39BD00765BA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C56CC111ADE927BE13BB9F2E /* Pods-PostLand.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2N9XYF2HJD;
@@ -272,6 +376,7 @@
 		};
 		84F5EEA21E2A39BD00765BA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F1F2E824216D80CB52D9BDE /* Pods-PostLand.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2N9XYF2HJD;
@@ -302,6 +407,7 @@
 				84F5EEA21E2A39BD00765BA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

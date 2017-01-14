@@ -1,0 +1,6 @@
+framework module Pods_PostLand {
+  umbrella header "Pods-PostLand-umbrella.h"
+
+  export *
+  module * { export * }
+}
