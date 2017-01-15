@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		3FB5FECDD385CC0C0E29FE4F /* Pods_PostLand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72377552FBD2927D89F1EC52 /* Pods_PostLand.framework */; };
+		84D756C01E2A791D00D15091 /* ShadowFancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D756BF1E2A791D00D15091 /* ShadowFancyView.swift */; };
+		84D756C31E2A847F00D15091 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D756C21E2A847F00D15091 /* Constants.swift */; };
+		84D756C51E2A8FEB00D15091 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D756C41E2A8FEB00D15091 /* RoundButton.swift */; };
 		84F5EE921E2A39BD00765BA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5EE911E2A39BD00765BA2 /* AppDelegate.swift */; };
 		84F5EE941E2A39BD00765BA2 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5EE931E2A39BD00765BA2 /* SignInVC.swift */; };
 		84F5EE971E2A39BD00765BA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F5EE951E2A39BD00765BA2 /* Main.storyboard */; };
 		84F5EE991E2A39BD00765BA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F5EE981E2A39BD00765BA2 /* Assets.xcassets */; };
 		84F5EE9C1E2A39BD00765BA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F5EE9A1E2A39BD00765BA2 /* LaunchScreen.storyboard */; };
 		84F5EEA41E2A39D400765BA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84F5EEA31E2A39D400765BA2 /* GoogleService-Info.plist */; };
+		84F887181E2B4BF600B87723 /* FancyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F887171E2B4BF600B87723 /* FancyTextField.swift */; };
+		84F8871A1E2B5BD300B87723 /* FancyButtonSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F887191E2B5BD300B87723 /* FancyButtonSignIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F1F2E824216D80CB52D9BDE /* Pods-PostLand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostLand.release.xcconfig"; path = "Pods/Target Support Files/Pods-PostLand/Pods-PostLand.release.xcconfig"; sourceTree = "<group>"; };
 		72377552FBD2927D89F1EC52 /* Pods_PostLand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostLand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D756BF1E2A791D00D15091 /* ShadowFancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowFancyView.swift; sourceTree = "<group>"; };
+		84D756C21E2A847F00D15091 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84D756C41E2A8FEB00D15091 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		84F5EE8E1E2A39BD00765BA2 /* PostLand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostLand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F5EE911E2A39BD00765BA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F5EE931E2A39BD00765BA2 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -27,6 +35,8 @@
 		84F5EE9B1E2A39BD00765BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F5EE9D1E2A39BD00765BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F5EEA31E2A39D400765BA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84F887171E2B4BF600B87723 /* FancyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyTextField.swift; sourceTree = "<group>"; };
+		84F887191E2B5BD300B87723 /* FancyButtonSignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButtonSignIn.swift; sourceTree = "<group>"; };
 		C56CC111ADE927BE13BB9F2E /* Pods-PostLand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostLand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PostLand/Pods-PostLand.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +80,10 @@
 		84D756BD1E2A3C1800D15091 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84D756BF1E2A791D00D15091 /* ShadowFancyView.swift */,
+				84D756C41E2A8FEB00D15091 /* RoundButton.swift */,
+				84F887171E2B4BF600B87723 /* FancyTextField.swift */,
+				84F887191E2B5BD300B87723 /* FancyButtonSignIn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -80,6 +94,14 @@
 				84F5EE931E2A39BD00765BA2 /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		84D756C11E2A846500D15091 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				84D756C21E2A847F00D15091 /* Constants.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		84F5EE851E2A39BC00765BA2 = {
@@ -103,6 +125,7 @@
 		84F5EE901E2A39BD00765BA2 /* PostLand */ = {
 			isa = PBXGroup;
 			children = (
+				84D756C11E2A846500D15091 /* Utils */,
 				84D756BC1E2A3C1100D15091 /* Model */,
 				84D756BD1E2A3C1800D15091 /* View */,
 				84D756BE1E2A3C1E00D15091 /* Controller */,
@@ -241,7 +264,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F5EE941E2A39BD00765BA2 /* SignInVC.swift in Sources */,
+				84D756C51E2A8FEB00D15091 /* RoundButton.swift in Sources */,
+				84F8871A1E2B5BD300B87723 /* FancyButtonSignIn.swift in Sources */,
+				84D756C01E2A791D00D15091 /* ShadowFancyView.swift in Sources */,
+				84F887181E2B4BF600B87723 /* FancyTextField.swift in Sources */,
 				84F5EE921E2A39BD00765BA2 /* AppDelegate.swift in Sources */,
+				84D756C31E2A847F00D15091 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
