@@ -99,7 +99,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOJ-8p-x3g" customClass="RoundButton" customModule="PostLand" customModuleProvider="target">
-                                <rect key="frame" x="110.5" y="213" width="100" height="100"/>
+                                <rect key="frame" x="110" y="213" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.26724493503570557" green="0.40626019239425659" blue="0.65947890281677246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Z8l-IU-SmR"/>
@@ -107,6 +107,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O0O-ee-Ies"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bYm-vD-qJY">
                                 <rect key="frame" x="30" y="333" width="260" height="124"/>
@@ -121,7 +124,7 @@
                                         <rect key="frame" x="0.0" y="45" width="260" height="30"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4m-7f-GAT" customClass="FancyButtonSignIn" customModule="PostLand" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="260" height="34"/>
@@ -130,6 +133,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZC4-jt-hbb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -153,6 +159,10 @@
                             <constraint firstAttribute="trailing" secondItem="bYm-vD-qJY" secondAttribute="trailing" constant="30" id="qxc-Uh-QM4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailLoginField" destination="Kkp-Qh-SNE" id="QTz-NT-i2r"/>
+                        <outlet property="passwordField" destination="1WE-UL-GbZ" id="9Pj-Sf-iAv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
