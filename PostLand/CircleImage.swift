@@ -1,14 +1,14 @@
 //
-//  ShadowFancyView.swift
+//  CircleImage.swift
 //  PostLand
 //
-//  Created by Admin on 14/01/2017.
+//  Created by Admin on 16/01/2017.
 //  Copyright © 2017 Admin. All rights reserved.
 //
 
 import UIKit
 
-class ShadowFancyView: UIView {
+class CircleImage: UIImageView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,7 +17,12 @@ class ShadowFancyView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        layer.cornerRadius = 2.0
+        }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        layer.cornerRadius = frame.width / 2
     }
 
 }

@@ -19,6 +19,10 @@
 		84F5EEA41E2A39D400765BA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84F5EEA31E2A39D400765BA2 /* GoogleService-Info.plist */; };
 		84F887181E2B4BF600B87723 /* FancyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F887171E2B4BF600B87723 /* FancyTextField.swift */; };
 		84F8871A1E2B5BD300B87723 /* FancyButtonSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F887191E2B5BD300B87723 /* FancyButtonSignIn.swift */; };
+		84FC79811E2CEBE6001B14ED /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC79801E2CEBE6001B14ED /* FeedVC.swift */; };
+		84FC79831E2D3494001B14ED /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC79821E2D3494001B14ED /* CircleImage.swift */; };
+		84FC79851E2D5725001B14ED /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC79841E2D5725001B14ED /* customCell.swift */; };
+		84FC79881E2E17C3001B14ED /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC79871E2E17C3001B14ED /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,10 @@
 		84F5EEA31E2A39D400765BA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84F887171E2B4BF600B87723 /* FancyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyTextField.swift; sourceTree = "<group>"; };
 		84F887191E2B5BD300B87723 /* FancyButtonSignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButtonSignIn.swift; sourceTree = "<group>"; };
+		84FC79801E2CEBE6001B14ED /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		84FC79821E2D3494001B14ED /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		84FC79841E2D5725001B14ED /* customCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
+		84FC79871E2E17C3001B14ED /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		C56CC111ADE927BE13BB9F2E /* Pods-PostLand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostLand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PostLand/Pods-PostLand.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +92,8 @@
 				84D756C41E2A8FEB00D15091 /* RoundButton.swift */,
 				84F887171E2B4BF600B87723 /* FancyTextField.swift */,
 				84F887191E2B5BD300B87723 /* FancyButtonSignIn.swift */,
+				84FC79821E2D3494001B14ED /* CircleImage.swift */,
+				84FC79841E2D5725001B14ED /* customCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -92,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				84F5EE931E2A39BD00765BA2 /* SignInVC.swift */,
+				84FC79801E2CEBE6001B14ED /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -125,6 +136,7 @@
 		84F5EE901E2A39BD00765BA2 /* PostLand */ = {
 			isa = PBXGroup;
 			children = (
+				84FC79861E2E1792001B14ED /* Services */,
 				84D756C11E2A846500D15091 /* Utils */,
 				84D756BC1E2A3C1100D15091 /* Model */,
 				84D756BD1E2A3C1800D15091 /* View */,
@@ -136,6 +148,14 @@
 				84F5EE9D1E2A39BD00765BA2 /* Info.plist */,
 			);
 			path = PostLand;
+			sourceTree = "<group>";
+		};
+		84FC79861E2E1792001B14ED /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84FC79871E2E17C3001B14ED /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +285,12 @@
 			files = (
 				84F5EE941E2A39BD00765BA2 /* SignInVC.swift in Sources */,
 				84D756C51E2A8FEB00D15091 /* RoundButton.swift in Sources */,
+				84FC79851E2D5725001B14ED /* customCell.swift in Sources */,
 				84F8871A1E2B5BD300B87723 /* FancyButtonSignIn.swift in Sources */,
 				84D756C01E2A791D00D15091 /* ShadowFancyView.swift in Sources */,
+				84FC79881E2E17C3001B14ED /* DataService.swift in Sources */,
+				84FC79811E2CEBE6001B14ED /* FeedVC.swift in Sources */,
+				84FC79831E2D3494001B14ED /* CircleImage.swift in Sources */,
 				84F887181E2B4BF600B87723 /* FancyTextField.swift in Sources */,
 				84F5EE921E2A39BD00765BA2 /* AppDelegate.swift in Sources */,
 				84D756C31E2A847F00D15091 /* Constants.swift in Sources */,
@@ -392,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C56CC111ADE927BE13BB9F2E /* Pods-PostLand.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2N9XYF2HJD;
 				INFOPLIST_FILE = PostLand/Info.plist;
@@ -406,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5F1F2E824216D80CB52D9BDE /* Pods-PostLand.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2N9XYF2HJD;
 				INFOPLIST_FILE = PostLand/Info.plist;
