@@ -17,6 +17,7 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var likeCount: UILabel!
     
+    var postData: Post?
     
 
     override func awakeFromNib() {
@@ -25,6 +26,11 @@ class CustomCell: UITableViewCell {
     }
 
     
+    func configureCell(post: Post){
+        self.postData = post
+        self.textView.text = postData?.caption
+        self.likeCount.text = "\(postData?.likes)"
+    }
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -53,8 +53,18 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let post = posts[indexPath.row]
-        print("SNAPP: \(post.imageUrl)")
-        return tableView.dequeueReusableCell(withIdentifier: "reuseCell") as! CustomCell
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "reuseCell") as? CustomCell{
+            
+            cell.configureCell(post: post)
+            
+            return cell
+        }else{
+            
+            return CustomCell()
+        }
+        
+        
     }
     
 
