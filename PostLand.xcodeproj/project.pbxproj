@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FB5FECDD385CC0C0E29FE4F /* Pods_PostLand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72377552FBD2927D89F1EC52 /* Pods_PostLand.framework */; };
+		843708B71E30AF220000B47B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843708B61E30AF220000B47B /* Post.swift */; };
 		84D756C01E2A791D00D15091 /* ShadowFancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D756BF1E2A791D00D15091 /* ShadowFancyView.swift */; };
 		84D756C31E2A847F00D15091 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D756C21E2A847F00D15091 /* Constants.swift */; };
 		84D756C51E2A8FEB00D15091 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D756C41E2A8FEB00D15091 /* RoundButton.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		5F1F2E824216D80CB52D9BDE /* Pods-PostLand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostLand.release.xcconfig"; path = "Pods/Target Support Files/Pods-PostLand/Pods-PostLand.release.xcconfig"; sourceTree = "<group>"; };
 		72377552FBD2927D89F1EC52 /* Pods_PostLand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostLand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		843708B61E30AF220000B47B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		84D756BF1E2A791D00D15091 /* ShadowFancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowFancyView.swift; sourceTree = "<group>"; };
 		84D756C21E2A847F00D15091 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		84D756C41E2A8FEB00D15091 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				84F5EEA31E2A39D400765BA2 /* GoogleService-Info.plist */,
+				843708B61E30AF220000B47B /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				84F5EE941E2A39BD00765BA2 /* SignInVC.swift in Sources */,
 				84D756C51E2A8FEB00D15091 /* RoundButton.swift in Sources */,
 				84FC79851E2D5725001B14ED /* customCell.swift in Sources */,
+				843708B71E30AF220000B47B /* Post.swift in Sources */,
 				84F8871A1E2B5BD300B87723 /* FancyButtonSignIn.swift in Sources */,
 				84D756C01E2A791D00D15091 /* ShadowFancyView.swift in Sources */,
 				84FC79881E2E17C3001B14ED /* DataService.swift in Sources */,
