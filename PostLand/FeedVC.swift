@@ -10,10 +10,13 @@ import UIKit
 import SwiftKeychainWrapper
 import Firebase
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addImage: UIImageView!
     
     var posts = [Post]()
+    var imagePicker: UIImagePickerController!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +24,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         tableView.delegate = self
         tableView.dataSource = self
         
-       
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
         
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in    //for realtime Updating data!!!
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot]{
@@ -65,6 +70,20 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         }
         
         
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let img = info[UIImagePickerControllerEditedImage] as? UIImage{
+            self.addImage.image = img
+        }else{
+            print("BROCK: A valid image wasn't selected")
+        }
+        imagePicker.dismiss(animated: true, completion: nil)  //when user select image from imagePicker this method will dismiss imagePicker
+    }
+    
+    
+    @IBAction func addImageTapped(_ sender: Any) {
+        present(imagePicker, animated: true, completion: nil)
     }
     
 

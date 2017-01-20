@@ -29,7 +29,7 @@ class CustomCell: UITableViewCell {
     func configureCell(post: Post){
         self.postData = post
         self.textView.text = postData?.caption
-        self.likeCount.text = "\(postData?.likes)"
+        self.likeCount.text = "\(postData!.likes)"
     }
     
     
